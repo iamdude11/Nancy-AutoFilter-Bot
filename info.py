@@ -25,24 +25,24 @@ MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-DATABASE_URI = environ.get('DATABASE_URI', "")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://4GBRENAME:4GBRENAME@cluster0.coinv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Anu1")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Eva_bot')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', ''))  
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001712245798'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL',''))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', ''))
-auth_channel = environ.get('AUTH_CHANNEL', '')
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001712245798'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1001542373688')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
 request_channel = environ.get('REQUEST_CHANNEL', '')
 MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 #---------------------------------------------------------------
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
@@ -68,10 +68,10 @@ REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-START_IMG = environ.get('START_IMG', 'https://i.ibb.co/qpxpGmC/image.jpg')
+START_IMG = environ.get('START_IMG', 'https://graph.org/file/cb1d46fec963f4b01788d.jpg')
 FORCESUB_IMG = environ.get('FORCESUB_IMG', 'https://i.ibb.co/ZNC1Hnb/ad3f2c88a8f2.jpg')
 REFER_PICS = (environ.get("REFER_PICS", "https://envs.sh/PSI.jpg")).split() 
-PAYPICS = (environ.get('PAYPICS', 'https://graph.org/file/f4db1c3ad3d9e38b328e6.jpg')).split()
+PAYPICS = (environ.get('PAYPICS', 'https://envs.sh/bV-.jpg')).split()
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/9f3f47c690bbcc67633c2.jpg'))
 REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
