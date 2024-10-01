@@ -38,8 +38,8 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002165663890'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1001542373688')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '0'))
 request_channel = environ.get('REQUEST_CHANNEL', '0')
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', ''))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/') #Support group link ( make sure bot is admin )
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '0'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/XeonFlixGroup') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', False)
