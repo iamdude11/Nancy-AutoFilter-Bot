@@ -48,6 +48,12 @@ class script(object):
 ◆ ʜᴏꜱᴛᴇᴅ ᴏɴ : <a href="https://t.me/xeonflix">ᴠᴘs</a>
 ◆ ʙᴜɪʟᴅ ꜱᴛᴀᴛᴜꜱ : ᴠ4.4.1 [ᴀᴅᴠᴀɴᴄᴇ ғᴇᴀᴛᴜʀᴇs].</b>""" 
     
+    SOURCE_TXT = """<b>ɴᴏᴛᴇ:
+⚠️ ᴛʜɪꜱ ɴᴏᴛ ᴀɴ ᴏᴘᴇɴ sᴏᴜʀᴄᴇ ᴘʀᴏᴊᴇᴄᴛ
+- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ - <a href="https://t.me/+y6mFtiS5JQFkNThl">ʜᴇʀᴇ</a>
+
+ᴀʟʟ ᴄʀᴇᴅɪᴛs - <a href="https://t.me/MR_JISSHU">ᴛʜɪs ᴘᴇʀsᴏɴ</a></b>"""
+    
     CREDIT_INFO = """
 <b>⍟───[ ᴄʀᴇᴅɪᴛꜱ ]───⍟
     
@@ -357,12 +363,6 @@ User - {}"""
 </blockquote>
 Aᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴀɴᴅ ᴍᴀᴋᴇ ᴍᴇ ᴀᴅᴍɪɴ ᴀɴᴅ ᴜsᴇ ᴀʟʟ ғᴇᴀᴛᴜʀᴇs😇</b>"""
 
-    SOURCE_TXT = """<b>
-NOTE:
-- ꜱᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ʜᴇʀᴇ ◉› :<blockquote><a href="https://t.me/JISSHU_BOTS">𝗝𝗶𝘀𝘀𝗵𝘂-𝗙𝗶𝗹𝘁𝗲𝗿-𝗕𝗼𝘁</a></blockquote>
-
-developer : Mr.Jisshu
-</b>""" 
     GROUP_C_TEXT = """<b><blockquote>
  --------------Set Verify-------------
 /set_verify {website link} {website api}
