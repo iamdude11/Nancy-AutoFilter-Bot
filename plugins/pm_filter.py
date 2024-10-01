@@ -982,37 +982,91 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
     
-    elif query.data == 'about':
-        await query.message.edit_text(
-            script.ABOUT_TEXT.format(query.from_user.mention(),temp.B_LINK),
-            reply_markup = InlineKeyboardMarkup(
-                [[
-			InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer')
-		],[
-			InlineKeyboardButton('Sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ', callback_data='Source')
-                ],[
-                        InlineKeyboardButton('My Developers 😎',callback_data='mydevelopers')
-		],[
-			InlineKeyboardButton('⋞ ʜᴏᴍᴇ', callback_data='start')]]
-                ),
-            disable_web_page_preview = True
-	)
-    elif query.data == "mydevelopers":
-        await query.answer("Meet the minds behind this bot:\n\n👨‍💻 @JISSHU_BOTS\n👨‍💻 @IM_JISSHU\n👨‍💻 @JOYBOY_ZORO\n👨‍💻 @TG_Anonymous_Official\n\n\n❤️ A big thank you for making this bot awesome!", show_alert=True)
- 
-    elif query.data == "Source":
+    elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('Repo', url='https://github.com/Jisshubot/Jisshu-Filter-Bot')
+            InlineKeyboardButton('‼️ ᴅɪꜱᴄʟᴀɪᴍᴇʀ ‼️', callback_data='disclaimer'),
         ],[
-            InlineKeyboardButton('⋞ ʙᴀᴄᴋ', callback_data='about'),
-            InlineKeyboardButton('• ᴄʟᴏsᴇ •', callback_data='close_data')
+            InlineKeyboardButton('• ᴏᴡɴᴇʀ •', url="tg://settings"),
+            InlineKeyboardButton('• ᴄʀᴇᴅɪᴛs •', callback_data='credit')
+        ],[
+            InlineKeyboardButton('🛰️ ꜱᴇʀᴠᴇʀ ɪɴғᴏ ☁️', callback_data='rendr'),
+            InlineKeyboardButton('• ꜱᴜᴘᴘᴏʀᴛ •', callback_data='channels')
+        ],[
+            InlineKeyboardButton('Hᴏᴍᴇ', callback_data='start'),
+            InlineKeyboardButton('sᴏᴜʀᴄᴇ', callback_data='source')
+        ]]
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.ABOUT_TXT.format(temp.B_NAME),
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+    elif query.data == "rendr":
+        await query.answer("⚡️ ʟɪᴠᴇ sʏsᴛᴇᴍ sᴛᴀᴛᴜs ⚡️\n\n✇ ᴄᴘᴜ : 2.6\n𖤍 ʀᴀᴍ : 58.8\n〄 ᴛᴏᴛᴀʟ ᴅɪsᴋ : 21.5 GiB\n✿ ᴜsᴇᴅ sᴘᴀᴄᴇ : 827.21 MiB (4.0%)\n✫ ғʀᴇᴇ sᴘᴀᴄᴇ : 19.58 GiB\n♡ ᴅᴀᴛᴀ ᴛʀᴀꜰɪᴄs ●●●●◌◌◌◌◌◌\n✪ ᴜᴘᴛɪᴍᴇ ●●●●●●●◌◌◌ 🛰\n\nᴠ4.4 [sᴛᴀʙʟᴇ] """, show_alert=True)
+
+    elif query.data == "source":
+        buttons = [[
+            InlineKeyboardButton("ʙᴀᴄᴋ", callback_data='about'),
+            InlineKeyboardButton("sᴜᴘᴘᴏʀᴛ", callback_data='channels')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.SOURCE_TXT,
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
-	)
+        )
+         
+    #jisshu
+    elif query.data == "channels":
+        buttons = [[
+            InlineKeyboardButton('⚡ Jᴏɪɴ ᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴍᴜɴɪᴛʏ ', url="https://t.me/Xeonflix")
+       ],[
+            InlineKeyboardButton('📮 Bᴏᴛ uᴘᴅᴀᴛᴇs ', url="t.me/XeonBots"),
+            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx ', url="t.me/xeonflixmovies")
+       ],[
+            InlineKeyboardButton('💌 Aɴɪᴍᴇs ', url="https://t.me/Anime_Xeon"),
+            InlineKeyboardButton('💌 Tᴠ/Wᴇʙ sᴇʀɪᴇs ', url="https://t.me/SeriesXeonFlix")
+       ],[
+            InlineKeyboardButton('📮 xᴇᴏɴ ɪɴᴅᴇx ', url="t.me/TeamXeon"),
+            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx2 ', url="t.me/X265HevcMovies01")
+       ],[
+            InlineKeyboardButton('💌 ʜᴇɴᴛᴀɪ ', url="https://t.me/Hentai_Xeon"),
+            InlineKeyboardButton('💌 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx3 ', url="https://t.me/X265HevcMovies02")
+       ],[
+            InlineKeyboardButton('🔞 18+ Aᴅuʟᴛ ᴄʜᴀɴɴᴇʟs ', url="https://t.me/XflixAdult")
+       ],[ 
+            InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='about')
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CHANNELS,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
+        
+    elif query.data == "credit":
+        buttons = [[
+            InlineKeyboardButton('✫ ᴏᴜʀ ʟɪɴᴋꜱ ✫', callback_data="channels")
+       ],[
+            InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='about'),
+            InlineKeyboardButton('• ᴄᴏɴᴛᴀᴄᴛ •', url="t.me/MrXeonTG")
+        ]]
+        await client.edit_message_media(
+            query.message.chat.id, 
+            query.message.id, 
+            InputMediaPhoto(random.choice(PICS))
+        )
+        reply_markup = InlineKeyboardMarkup(buttons)
+        await query.message.edit_text(
+            text=script.CREDIT_INFO,
+            reply_markup=reply_markup,
+            parse_mode=enums.ParseMode.HTML
+        )
 	
     elif query.data == "disclaimer":
             btn = [[
