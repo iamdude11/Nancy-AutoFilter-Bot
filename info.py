@@ -33,7 +33,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Eva_bot')
 #----------- There will be channel id add in all these ---------
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001712245798'))  
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002479911955'))
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS',''))
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','0'))
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002165663890'))
 auth_channel = environ.get('AUTH_CHANNEL', '-1001542373688')
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', ''))
