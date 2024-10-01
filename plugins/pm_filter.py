@@ -1016,7 +1016,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             parse_mode=enums.ParseMode.HTML
         )
          
-    #jisshu
     elif query.data == "channels":
         buttons = [[
             InlineKeyboardButton('⚡ Jᴏɪɴ ᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴍᴜɴɪᴛʏ ', url="https://t.me/Xeonflix")
@@ -1055,17 +1054,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
        ],[
             InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='about'),
             InlineKeyboardButton('• ᴄᴏɴᴛᴀᴄᴛ •', url="t.me/MrXeonTG")
-        ]]
-        await client.edit_message_media(
-            query.message.chat.id, 
-            query.message.id, 
-            InputMediaPhoto(random.choice(PICS))
-        )
-        reply_markup = InlineKeyboardMarkup(buttons)
-        await query.message.edit_text(
-            text=script.CREDIT_INFO,
-            reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+       ]]
+       reply_markup = InlineKeyboardMarkup(buttons)
+       await query.message.edit_text(
+           text=script.CREDIT_INFO,
+           reply_markup=reply_markup,
+           parse_mode=enums.ParseMode.HTML
         )
 	
     elif query.data == "disclaimer":
