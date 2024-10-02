@@ -1051,10 +1051,16 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('• ᴄᴏɴᴛᴀᴄᴛ •', url="t.me/MrXeonTG")
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
+        m=await query.message.reply_text("● ◌ ◌")
+        n=await m.edit("● ● ◌")
+        o=await n.edit("● ● ●")
+        await asyncio.sleep(1)
+        await o.delete()
         await query.message.edit_text(
             text=script.CREDIT_INFO,
+            disable_web_page_preview=True,
             reply_markup=reply_markup,
-            parse_mode=enums.ParseMode.HTML
+            parse_mode='html'
         )
 	
     elif query.data == "disclaimer":
