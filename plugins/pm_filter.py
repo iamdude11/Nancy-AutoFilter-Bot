@@ -1057,8 +1057,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await asyncio.sleep(1)
         await o.delete()
         await query.message.edit_text(
-            text=script.CREDIT_INFO,
-            disable_web_page_preview=True,
+            text=script.CREDIT_INFO.format(temp.B_NAME),
             reply_markup=reply_markup,
             parse_mode='html'
         )
