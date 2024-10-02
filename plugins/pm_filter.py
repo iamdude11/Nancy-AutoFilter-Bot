@@ -1054,7 +1054,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         m=await query.message.reply_text("● ◌ ◌")
         n=await m.edit("● ● ◌")
         o=await n.edit("● ● ●")
-        await asyncio.sleep(1)
+        await asyncio.sleep(0.5)
         await o.delete()
         await query.message.edit_text(
             text=script.CREDIT_INFO,
