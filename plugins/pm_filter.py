@@ -1021,10 +1021,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('⚡ Jᴏɪɴ ᴏᴜʀ ᴛᴇʟᴇɢʀᴀᴍ ᴄᴏᴍᴍᴜɴɪᴛʏ ', url="https://t.me/Xeonflix")
        ],[
             InlineKeyboardButton('📮 Bᴏᴛ uᴘᴅᴀᴛᴇs ', url="t.me/XeonBots"),
-            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx ', url="t.me/xeonflixmovies")
+            InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx ', url="t.me/MovieFlixOcean")
        ],[
             InlineKeyboardButton('💌 Aɴɪᴍᴇs ', url="https://t.me/Anime_Xeon"),
-            InlineKeyboardButton('💌 Tᴠ/Wᴇʙ sᴇʀɪᴇs ', url="https://t.me/SeriesXeonFlix")
+            InlineKeyboardButton('💌 Tᴠ/Wᴇʙ sᴇʀɪᴇs ', url="https://t.me/SeriesFlixOcean")
        ],[
             InlineKeyboardButton('📮 xᴇᴏɴ ɪɴᴅᴇx ', url="t.me/TeamXeon"),
             InlineKeyboardButton('📮 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx2 ', url="t.me/X265HevcMovies01")
@@ -1032,7 +1032,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('💌 ʜᴇɴᴛᴀɪ ', url="https://t.me/Hentai_Xeon"),
             InlineKeyboardButton('💌 Mᴏᴠɪᴇꜱ ɪɴᴅᴇx3 ', url="https://t.me/X265HevcMovies02")
        ],[
-            InlineKeyboardButton('🔞 18+ Aᴅuʟᴛ ᴄʜᴀɴɴᴇʟs ', url="https://t.me/XflixAdult")
+            InlineKeyboardButton('🔞 18+ Aᴅuʟᴛ ᴄʜᴀɴɴᴇʟs ', url="https://t.me/Adult_Infinity")
        ],[ 
             InlineKeyboardButton('• ʙᴀᴄᴋ •', callback_data='about')
         ]]
