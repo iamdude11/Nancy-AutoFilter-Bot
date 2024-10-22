@@ -21,7 +21,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '5277636826:AAHxRTPk9fUEBdayP-gSJv6YfyFQxV4
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '821215952').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/MrXeonTG") # ADMIN USERNAME
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001712245798'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/JisshuMovieZone')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/XeonFlixGroup')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001608454110').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
@@ -79,7 +79,7 @@ REACTIONS = ["👀", "😱", "🔥", "😍", "🎉", "🥰", "😇", "⚡"]
 #---------------------------------------------------------------
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 PORT = environ.get('PORT', '5000')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
